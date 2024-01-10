@@ -113,6 +113,7 @@ input {
     outline: none;
     margin-bottom: 20px;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .g-btn {
