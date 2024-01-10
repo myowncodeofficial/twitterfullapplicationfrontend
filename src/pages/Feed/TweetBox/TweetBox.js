@@ -20,7 +20,7 @@ const TweetBox = () => {
     const [user] = useAuthState(auth)
     const email = user?.email;
 
-    const userProfilePic = loggedInUser[0]?.profileImage?loggedInUser[0]?.profileImage:"https://api.imgbb.com/1/upload?key=b39e03eefdbf58da1bf50c483e79d0b3"
+    const userProfilePic = loggedInUser[0]?.profileImage?loggedInUser[0]?.profileImage:"https://api.imgbb.com/1/upload?key=6f902511a781fc19e6f532fc69739a85"
 
     const handleUploadImage = (e) => {
         setIsLoading(true);
@@ -29,7 +29,7 @@ const TweetBox = () => {
         const formData = new FormData();
         formData.set('image', image)
 
-        axios.post('https://api.imgbb.com/1/upload?key=b39e03eefdbf58da1bf50c483e79d0b3', formData)
+        axios.post('https://api.imgbb.com/1/upload?key=6f902511a781fc19e6f532fc69739a85', formData)
             .then(res => {
                 setImageURL(res.data.data.display_url)
                 console.log(res.data.data.display_url)
