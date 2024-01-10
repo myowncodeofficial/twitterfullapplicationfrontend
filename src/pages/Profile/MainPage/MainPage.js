@@ -36,7 +36,7 @@ const MainPage = ({ user }) => {
             const formData = new FormData();
             formData.set('image', image)
 
-            axios.post('https://api.imgbb.com/1/upload?key=6f902511a781fc19e6f532fc69739a85', formData)
+            axios.post('https://api.imgbb.com/1/upload?key=b39e03eefdbf58da1bf50c483e79d0b3', formData)
                 .then(res => {
                     const url = res.data.data.display_url;
                     const userCoverImage = {
@@ -56,7 +56,7 @@ const MainPage = ({ user }) => {
             const formData = new FormData();
             formData.set('image', image)
 
-            axios.post('https://api.imgbb.com/1/upload?key=6f902511a781fc19e6f532fc69739a85', formData)
+            axios.post('https://api.imgbb.com/1/upload?key=b39e03eefdbf58da1bf50c483e79d0b3', formData)
                 .then(res => {
                     const url = res.data.data.display_url;
                     const userProfileImage = {
